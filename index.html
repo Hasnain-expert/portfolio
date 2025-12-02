@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkmore Solutions - Professional Link Building Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb;
+        }
+        /* Custom styles for social icons */
+        .icon-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+        .icon-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .review-card-foreign {
+            border-left: 5px solid #06b6d4; /* Secondary Cyan */
+        }
+        /* Custom styling for mock review cards */
+        .mock-review-card {
+            background: linear-gradient(135deg, #ffffff, #f0f4ff);
+            border: 1px solid #e0e7ff;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#1e40af', // Darker Blue
+                        'secondary-cyan': '#06b6d4', // Cyan for accents
+                        'bg-gray': '#f7f9fb',
+                        'whatsapp-green': '#25D366',
+                        'linkedin-blue': '#0A66C2',
+                        'email-red': '#EA4335',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="text-gray-800">
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-extrabold text-primary-blue">
+                <span class="text-secondary-cyan">Linkmore</span> Solutions
+            </h1>
+            <nav class="hidden md:flex space-x-8 text-lg font-medium">
+                <a href="#about" class="text-gray-600 hover:text-primary-blue transition duration-300">About Me</a>
+                <a href="#services" class="text-gray-600 hover:text-primary-blue transition duration-300">Services</a>
+                <a href="#reviews" class="text-gray-600 hover:text-primary-blue transition duration-300">Testimonials</a>
+                <a href="#proof" class="text-gray-600 hover:text-primary-blue transition duration-300">Live Proof</a>
+                <a href="#contact" class="text-gray-600 hover:text-primary-blue transition duration-300">Contact</a>
+            </nav>
+            <a href="https://wa.me/923019192737" target="_blank" class="hidden md:inline-block bg-whatsapp-green hover:bg-green-600 text-white font-semibold py-2 px-6 rounded-full transition duration-300 shadow-lg">
+                <span class="flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zm0 3.5c-4.694 0-8.5 3.806-8.5 8.5 0 1.986.744 3.864 2.022 5.32l-1.315 4.81 5.006-1.637c1.385.753 2.943 1.157 4.787 1.157 4.694 0 8.5-3.806 8.5-8.5s-3.806-8.5-8.5-8.5zM12 5c3.86 0 7 3.14 7 7s-3.14 7-7 7c-1.5 0-2.887-.47-4.043-1.284l-4.484 1.468L6.46 17.043C5.59 15.9 5 14.516 5 13c0-3.86 3.14-7 7-7zm-.625 3.5c-.38 0-.693.313-.693.693 0 .38.313.692.693.692.38 0 .692-.312.692-.692 0-.38-.312-.693-.692-.693zm2.5 0c-.38 0-.693.313-.693.693 0 .38.313.692.693.692.38 0 .693-.312.693-.692 0-.38-.313-.693-.693-.693zM12 14.5c-.77 0-1.54-.313-2.078-.851-.539-.538-.851-1.308-.851-2.078h1.385c0 .416.162.805.456 1.099.294.294.683.456 1.099.456s.805-.162 1.099-.456c.294-.294.456-.683.456-1.099v-1.385h-1.385v-1.385h2.77v2.77c0 .77-.312 1.54-.851 2.078-.538.539-1.308.851-2.078.851z"/></svg>
+                    WhatsApp Chat
+                </span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="py-16 md:py-24 bg-bg-gray">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <span class="text-secondary-cyan text-sm font-semibold uppercase tracking-wider">SEO GROWTH PARTNER</span>
+                <h2 class="mt-4 text-5xl md:text-7xl font-extrabold leading-tight text-gray-900">
+                    High-Authority <span class="text-primary-blue">Guest Post Services</span>
+                </h2>
+                <p class="mt-6 text-xl text-gray-600 max-w-3xl mx-auto">
+                    Linkmore Solutions, led by Hasnain Hameed, specializes in rapid, high-quality, and domain-relevant backlink acquisition to elevate your organic presence instantly.
+                </p>
+                <div class="mt-10 space-y-4 md:space-y-0 md:space-x-6">
+                    <a href="#proof" class="inline-block bg-primary-blue hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-xl transform hover:scale-105">View Live Link Proof</a>
+                    <a href="#contact" class="inline-block bg-white border border-primary-blue text-primary-blue font-bold py-3 px-8 rounded-full transition duration-300 hover:bg-primary-blue hover:text-white">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-16 md:py-24 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h3 class="text-4xl font-bold text-gray-900 mb-6 border-b-4 border-secondary-cyan inline-block pb-1">About Me</h3>
+                <div class="bg-bg-gray p-8 rounded-xl shadow-lg mt-6">
+                    <p class="text-xl text-gray-700 leading-relaxed">
+                        I am **Hasnain Hameed**, the founder of Linkmore Solutions. With over **3+ years of professional experience** in the SEO industry, my passion is helping businesses achieve dramatic organic growth through strategic link building. I focus exclusively on securing high-quality, relevant guest posts and powerful backlinks that drive Domain Authority (DA) and organic traffic. My expertise spans both foundational **Off-Page SEO** strategies and critical **On-Page SEO** optimization, ensuring a holistic approach to your website's ranking success. Let's work together to make your visibility a competitive advantage.
+                    </p>
+                    <a href="https://www.linkedin.com/in/hasnainhameed?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="mt-6 inline-flex items-center text-linkedin-blue font-semibold hover:underline">
+                        Connect with me on LinkedIn
+                        <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.366-4-3.235-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Services Section (Split into Off-Page and On-Page) -->
+        <section id="services" class="py-16 md:py-24 bg-bg-gray">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-4xl font-extrabold text-center text-gray-900 mb-12">Comprehensive SEO Services</h3>
+                
+                <!-- OFF-PAGE SEO SECTION -->
+                <h4 class="text-2xl font-bold text-primary-blue mb-6 border-b pb-2">Off-Page SEO (Link Building Focus)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                    
+                    <!-- Service Card 1: Targeted Guest Posting (Off-Page) -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                        <div class="text-secondary-cyan mb-3">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.205 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.832 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.832 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.168 18 16.5 18s-3.332.477-4.5 1.253"></path></svg>
+                        </div>
+                        <h5 class="text-xl font-semibold mb-2">High-DA Guest Posting</h5>
+                        <p class="text-gray-600 text-sm">Securing powerful, contextual backlinks from high-authority, niche-relevant websites globally to instantly boost your Domain Rating (DR).</p>
+                    </div>
+
+                    <!-- Service Card 2: Broken Link Building (Off-Page) -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                        <div class="text-secondary-cyan mb-3">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        </div>
+                        <h5 class="text-xl font-semibold mb-2">Link Reclamation & BLB</h5>
+                        <p class="text-gray-600 text-sm">Identifying and converting broken outbound links on authoritative sites into live, valuable links pointing to your equivalent content.</p>
+                    </div>
+
+                    <!-- Service Card 3: Citation Links (Off-Page) -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                        <div class="text-secondary-cyan mb-3">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h5 class="text-xl font-semibold mb-2">Resource Page Link Building</h5>
+                        <p class="text-gray-600 text-sm">Getting featured on industry resource pages, directories, and 'Best of' lists to build strong foundational trust signals.</p>
+                    </div>
+
+                </div>
+
+                <!-- ON-PAGE SEO SECTION -->
+                <h4 class="text-2xl font-bold text-primary-blue mb-6 border-b pb-2">On-Page SEO Consultation</h4>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Service Card 4: Keyword Research (On-Page) -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                        <div class="text-secondary-cyan mb-3">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                        </div>
+                        <h5 class="text-xl font-semibold mb-2">Targeted Keyword Strategy</h5>
+                        <p class="text-gray-600 text-sm">In-depth research to identify high-intent, low-competition keywords that drive targeted organic traffic to your pages.</p>
+                    </div>
+
+                    <!-- Service Card 5: Content Optimization (On-Page) -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                        <div class="text-secondary-cyan mb-3">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0v5.5a1.5 1.5 0 01-3 0V15m3 0H9m3 0h3"></path></svg>
+                        </div>
+                        <h5 class="text-xl font-semibold mb-2">Content & Meta Optimization</h5>
+                        <p class="text-gray-600 text-sm">Optimizing titles, descriptions, headings, and internal link structure for maximum search engine crawlability and relevance.</p>
+                    </div>
+
+                    <!-- Service Card 6: Technical Audit (On-Page) -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                        <div class="text-secondary-cyan mb-3">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v16l-12 3zm12-3V6m-12 3v7m0-7l12 3m0-3l-12 3"></path></svg>
+                        </div>
+                        <h5 class="text-xl font-semibold mb-2">Technical SEO Audit</h5>
+                        <p class="text-gray-600 text-sm">Checking site speed, mobile responsiveness, structured data, and core web vitals to ensure a perfectly optimized foundation.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- Review/Testimonial Section (Mock Reviews) -->
+        <section id="reviews" class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-4xl font-bold text-center mb-16 text-gray-900">What Clients Say About Linkmore Solutions</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Mock Review 1 (High DA) -->
+                    <div class="mock-review-card p-6 rounded-xl shadow-xl transition duration-300 hover:shadow-2xl">
+                        <p class="text-4xl text-primary-blue mb-4">“</p>
+                        <p class="italic text-gray-700 mb-4">"The quality of the domains Hasnain secured was outstanding. We saw an instant lift in our Domain Rating and organic traffic within the first month. The communication was excellent—fast and professional."</p>
+                        <div class="flex items-center">
+                            <!-- Placeholder Image 1 (Orange/Red) -->
+                            <img src="https://placehold.co/40x40/FF5733/ffffff?text=P1" alt="Placeholder Profile 1" class="w-10 h-10 rounded-full object-cover mr-3" onerror="this.onerror=null;this.src='https://placehold.co/40x40/primary-blue/ffffff?text=P1';">
+                            <div>
+                                <p class="font-semibold text-gray-900">John D., Marketing Director</p>
+                                <p class="text-sm text-gray-500">San Francisco, USA</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mock Review 2 (Speed & Efficiency) -->
+                    <div class="mock-review-card p-6 rounded-xl shadow-xl transition duration-300 hover:shadow-2xl">
+                        <p class="text-4xl text-primary-blue mb-4">“</p>
+                        <p class="italic text-gray-700 mb-4">"I appreciate the speed and efficiency of Linkmore Solutions. I requested two high-DA links and had the live URLs within 48 hours. This level of service is hard to find in the SEO world."</p>
+                        <div class="flex items-center">
+                            <!-- Placeholder Image 2 (Green) -->
+                            <img src="https://placehold.co/40x40/33FF57/ffffff?text=P2" alt="Placeholder Profile 2" class="w-10 h-10 rounded-full object-cover mr-3" onerror="this.onerror=null;this.src='https://placehold.co/40x40/secondary-cyan/ffffff?text=P2';">
+                            <div>
+                                <p class="font-semibold text-gray-900">Annette L., SEO Consultant</p>
+                                <p class="text-sm text-gray-500">London, UK</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mock Review 3 (Relevance and Context) -->
+                    <div class="mock-review-card p-6 rounded-xl shadow-xl transition duration-300 hover:shadow-2xl">
+                        <p class="text-4xl text-primary-blue mb-4">“</p>
+                        <p class="italic text-gray-700 mb-4">"The links weren't just powerful, they were perfectly contextual. The content created around our anchor text was highly relevant to our niche. It’s clear they prioritize quality over quantity."</p>
+                        <div class="flex items-center">
+                            <!-- Placeholder Image 3 (Blue) -->
+                            <img src="https://placehold.co/40x40/3357FF/ffffff?text=P3" alt="Placeholder Profile 3" class="w-10 h-10 rounded-full object-cover mr-3" onerror="this.onerror=null;this.src='https://placehold.co/40x40/primary-blue/ffffff?text=P3';">
+                            <div>
+                                <p class="font-semibold text-gray-900">Sarah K., Startup Founder</p>
+                                <p class="text-sm text-gray-500">Sydney, Australia</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Proof of Delivery Section (WhatsApp Screenshots) -->
+        <section id="proof" class="py-16 md:py-24 bg-primary-blue text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-4xl font-bold text-center mb-16 text-white">Live Proof of Instant Service Delivery (Client Chats)</h3>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+                    <!-- Proof Card 1: Multi-Link Delivery (from 1000185985.jpg) -->
+                    <div class="bg-white p-6 rounded-xl shadow-2xl text-gray-800 review-card-foreign">
+                        <div class="text-center mb-4">
+                            <span class="text-xl font-extrabold text-secondary-cyan">Proof of Bulk Guest Post Delivery</span>
+                            <p class="text-sm text-gray-500 mt-1">Confirmed delivery of 4 high-authority posts to a client.</p>
+                        </div>
+                        
+                        <div class="bg-secondary-cyan/10 p-4 rounded-lg border border-secondary-cyan">
+                            <p class="font-semibold text-gray-900 mb-2">Client Communication & Live Links:</p>
+                            <ul class="text-sm text-gray-700 mt-2 space-y-2 list-disc list-inside">
+                                <li class="text-primary-blue font-medium">Guest post delivered on Techfelts.com</li>
+                                <li class="text-primary-blue font-medium">Guest post delivered on Europeanbusinessreview.com</li>
+                                <li class="text-primary-blue font-medium">Guest post delivered on Ecommercefastlane.com</li>
+                                <li class="text-primary-blue font-medium">Guest post delivered on Opsmatters.com</li>
+                            </ul>
+                            <p class="bg-green-100 text-green-800 p-2 rounded-lg inline-block text-xs mt-3 float-right">"Please check it brother"</p>
+                        </div>
+                    </div>
+
+                    <!-- Proof Card 2: Payment & Link Delivery (from 1000185984.jpg) -->
+                    <div class="bg-white p-6 rounded-xl shadow-2xl text-gray-800 review-card-foreign">
+                        <div class="text-center mb-4">
+                            <span class="text-xl font-extrabold text-green-600">Link Live & Payment Confirmed</span>
+                            <p class="text-sm text-gray-500 mt-1">Proof of immediate live link delivery and payment receipt.</p>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 gap-4 items-start">
+                            <div class="bg-green-50 p-4 rounded-lg border border-green-300">
+                                <p class="font-semibold text-green-900 mb-2">Live Link Delivered:</p>
+                                <p class="font-bold text-base text-gray-900">Link is live on Decoratoradvice.com</p>
+                                <p class="bg-green-100 text-green-800 p-2 rounded-lg inline-block text-xs mt-2 float-right">Okay 👍</p>
+                            </div>
+                            <div class="bg-red-50 p-4 rounded-lg border border-red-300">
+                                <p class="font-semibold text-red-900 mb-2">Payment Details:</p>
+                                <p class="text-sm text-gray-700">Payment 39,500 pkr. Kindly process asap.</p>
+                                <p class="font-bold text-sm text-primary-blue mt-2">Mode: jazzcash</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proof Card 3: Instant 2-Link Delivery (from 1000185944.jpg) -->
+                    <div class="bg-white p-6 rounded-xl shadow-2xl text-gray-800 review-card-foreign">
+                        <div class="text-center mb-4">
+                            <span class="text-xl font-extrabold text-green-600">Instant Guest Post Service 💯</span>
+                            <p class="text-sm text-gray-500 mt-1">Rapid Delivery Confirmed for two links.</p>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 gap-4 items-start">
+                             <div class="bg-gray-50 p-4 rounded-lg shadow-inner">
+                                <p class="font-semibold text-gray-900 mb-2">Client Chat:</p>
+                                <p class="bg-green-100 text-green-800 p-2 rounded-lg inline-block max-w-full mb-2 text-sm">Bhai krwa den instant</p>
+                                <p class="bg-blue-100 text-blue-800 p-2 rounded-lg inline-block max-w-full float-right text-sm">Ok Bhai</p>
+                            </div>
+                            <!-- Live Link Delivery Proof -->
+                            <div class="bg-secondary-cyan/10 p-4 rounded-lg border-l-4 border-secondary-cyan">
+                                <p class="font-semibold text-gray-900 mb-2">Delivery Proof:</p>
+                                <p class="font-bold text-lg text-primary-blue">
+                                    2 Links on <a href="https://techbullion.com/" target="_blank" class="hover:underline">Techbullion.com</a>
+                                </p>
+                                <p class="text-sm text-gray-700 mt-1">Confirmation of 1st and 2nd Live Link.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Proof Card 4: Site Availability Check (from 1000185984.jpg - secondary) -->
+                    <div class="bg-white p-6 rounded-xl shadow-2xl text-gray-800 review-card-foreign">
+                        <div class="text-center mb-4">
+                            <span class="text-xl font-extrabold text-primary-blue">Site Availability & Quick Response</span>
+                            <p class="text-sm text-gray-500 mt-1">Confirmation of available site for client.</p>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 gap-4 items-start">
+                            <div class="bg-gray-50 p-4 rounded-lg border border-gray-300">
+                                <p class="font-semibold text-gray-900 mb-2">Client Inquiry:</p>
+                                <p class="text-sm text-gray-700">Ye he aap ke pass (Regarding happyhealthythings.com)</p>
+                            </div>
+                            <div class="bg-green-50 p-4 rounded-lg border border-green-300">
+                                <p class="font-semibold text-green-900 mb-2">My Confirmation:</p>
+                                <p class="font-bold text-base text-gray-900">Yes available</p>
+                                <p class="text-sm text-gray-600 mt-1">Quick response on high-quality domain availability.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA/Contact Section -->
+        <section id="contact" class="py-16 md:py-20 bg-bg-gray">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-900">
+                <h3 class="text-4xl font-bold mb-4">Connect Directly for Instant Link Building</h3>
+                <p class="text-xl max-w-2xl mx-auto mb-10 text-gray-600">Reach out now to discuss your requirements and get high-authority links delivered fast by Hasnain Hameed.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    
+                    <!-- WhatsApp Button -->
+                    <a href="https://wa.me/923019192737" target="_blank" class="icon-btn bg-whatsapp-green hover:bg-green-600 text-white font-bold py-4 px-6 rounded-xl text-lg shadow-lg">
+                        <!-- WhatsApp Icon SVG -->
+                        <svg class="w-7 h-7 mr-3" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.5 18h-.15c-.9 0-2.34-.345-3.41-1.31-1.134-1.012-1.92-2.585-1.92-4.175 0-3.35 2.73-6.08 6.08-6.08 3.35 0 6.08 2.73 6.08 6.08 0 3.35-2.73 6.08-6.08 6.08zm0-10c-2.43 0-4.41 1.98-4.41 4.41 0 1.25.43 2.37 1.24 3.27l-1.31 4.81 5.01-1.64c.91.5 1.95.78 3.03.78 2.43 0 4.41-1.98 4.41-4.41s-1.98-4.41-4.41-4.41zm-.625 1.5c.38 0 .693-.313.693-.693 0-.38-.313-.692-.693-.692-.38 0-.692.312-.692.692 0 .38.312.693.692.693zm2.5 0c.38 0 .693-.313.693-.693 0-.38-.313-.692-.693-.692-.38 0-.693.312-.693.692 0 .38.313.693.693.693zM12.04 14.5c-.77 0-1.54-.313-2.078-.851-.539-.538-.851-1.308-.851-2.078h1.385c0 .416.162.805.456 1.099.294.294.683.456 1.099.456s.805-.162 1.099-.456c.294-.294.456-.683.456-1.099v-1.385h-1.385v-1.385h2.77v2.77c0 .77-.312 1.54-.851 2.078-.538.539-1.308.851-2.078.851z"/></svg>
+                        WhatsApp (+92 301 9192737)
+                    </a>
+
+                    <!-- LinkedIn Button -->
+                    <a href="https://www.linkedin.com/in/hasnainhameed?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="icon-btn bg-linkedin-blue hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-xl text-lg shadow-lg">
+                        <!-- LinkedIn Icon SVG -->
+                        <svg class="w-7 h-7 mr-3" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.366-4-3.235-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        Connect on LinkedIn
+                    </a>
+                    
+                    <!-- Email Button -->
+                    <a href="mailto:Hasnainhameed747474@gmail.com" class="icon-btn bg-email-red hover:bg-red-700 text-white font-bold py-4 px-6 rounded-xl text-lg shadow-lg">
+                        <!-- Gmail/Email Icon SVG -->
+                        <svg class="w-7 h-7 mr-3" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 4h-20c-1.159 0-2 .841-2 2v12c0 1.159.841 2 2 2h20c1.159 0 2-.841 2-2v-12c0-1.159-.841-2-2-2zm-20 3.324l9.742 7.276c.074.055.161.082.258.082s.184-.027.258-.082l9.742-7.276c.101-.075.258-.231.258-.456s-.157-.381-.258-.456l-9.742-7.276c-.074-.055-.161-.082-.258-.082s-.184.027-.258.082L2 6.868v10.132h20V6.868l-1.469-1.192-8.531 6.371L2 5.324v-.324c0-.551.449-1 1-1h18c.551 0 1 .449 1 1v.324z"/></svg>
+                        Email Us
+                    </a>
+                </div>
+                <p class="mt-6 text-sm text-gray-500">Email: Hasnainhameed747474@gmail.com</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400">
+            <p>&copy; 2025 Linkmore Solutions. All rights reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
